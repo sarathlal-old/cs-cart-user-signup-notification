@@ -4,7 +4,6 @@ if ( !defined('BOOTSTRAP') ) { die('Access denied'); }
 
 use Tygh\Registry;
 use Tygh\Http;
-use Tygh\Settings;
 use Tygh\Mailer;
 
 function fn_csc_signup_notification_send_notification($status, $user_id, $to_email){
@@ -18,7 +17,7 @@ function fn_csc_signup_notification_send_notification($status, $user_id, $to_ema
                     'data' => array(
                         'user_data' => $user_data,
                     ),
-                    'tpl' => 'profiles/create_profile_admin_notification.tpl',
+                    'tpl' => 'addons/csc_signup_notification/create_profile_admin_notification.tpl',
                     'company_id' => $user_data['company_id']
                 ), 'A', Registry::get('settings.Appearance.backend_default_language'));
             }
@@ -34,8 +33,6 @@ function fn_csc_signup_notification_update_profile($action, $user_data, $current
 				} else { 
 					$notifier = 'company_users_department';
 				}
-				
-				
 				fn_csc_signup_notification_send_notification('A', $user_data['user_id'], $notifier);
 			}
         }
