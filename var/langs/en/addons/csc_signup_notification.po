@@ -1,0 +1,17 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "English"
+
+msgctxt "Addons::name::csc_signup_notification"
+msgid "Admin Notification on User Sign up"
+msgstr "Admin Notification on User Sign up"
+
+msgctxt "Addons::description::csc_signup_notification"
+msgid "Send an email notification to User department. Developed by <a target=\"_blank\" href=\"http://sarathlal.com/\">Sarathlal N</a> for <a target=\"_blank\" href=\"http://acodez.in/\">Acodez</a>."
+msgstr "Send an email notification to User department. Developed by <a target=\"_blank\" href=\"http://sarathlal.com/\">Sarathlal N</a> for <a target=\"_blank\" href=\"http://acodez.in/\">Acodez</a>."

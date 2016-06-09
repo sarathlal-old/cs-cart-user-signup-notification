@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+   <id>csc_signup_notification</id>
+   <version>1.0</version>
+   <priority>700</priority>
+   <position>0</position>
+   <status>active</status>
+   <default_language>en</default_language>
+   <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+   <authors>
+       <author>
+           <name>Sarathlal N</name>
+           <email>sarath@openmailbox.org</email>
+           <url>http://sarathlal.com</url>
+       </author>
+   </authors>
+<settings>
+    <sections>
+        <section id="general">
+            <items>
+                <item id="notification_email">
+                    <name>Enter Valid  Email for Notification</name>
+                    <type>input</type>
+                </item>
+                <item id="enable_notification">
+                    <name>Enable Notification</name>
+                    <type>selectbox</type>
+                    <default_value>Y</default_value>
+                        <variants>
+                            <item id="N">
+                                <name>No</name>
+                            </item>
+                            <item id="Y">
+                                <name>Yes</name>
+                            </item>
+                        </variants>
+                </item>
+            </items>
+        </section>
+    </sections>
+</settings>
+
+</addon>
